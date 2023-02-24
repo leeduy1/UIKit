@@ -1,0 +1,103 @@
+@use "../abstracts/" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
+
+  @include tablet {
+    padding-top: 32px;
+  }
+
+  @include desktop {
+    padding-top: 48px;
+  }
+
+  .navbar__logo {
+    line-height: 23px;
+    font-size: 20px;
+    color: $primary-color;
+    letter-spacing: 0.0554719em;
+
+    @include tablet {
+      flex: 1;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    @include desktop {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+
+  .nav-list {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 2;
+      text-transform: uppercase;
+      gap: 32px;
+    }
+
+    .nav-list__item {
+      .nav-link {
+        color: $white;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+
+        @include tablet {
+          letter-spacing: 0.0832079em;
+        }
+
+        @include desktop {
+          letter-spacing: 0.0555556em;
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+  .nav-list-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+
+    @include tablet {
+      flex: 1;
+    }
+
+    @include desktop {
+      gap: 42px;
+    }
+
+    .nav-img-icon {
+      width: 16px;
+
+      @include tablet {
+        width: 20px;
+      }
+
+      @include desktop {
+        width: 30px;
+      }
+    }
+  }
+
+  .nav__menu {
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+// Media-Query Mixin
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+// Background image
+
+@mixin bg-img($bg: "") {
+  background-image: url($bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

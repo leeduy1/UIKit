@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+
+.testimonials-sec {
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 16px;
+  @include tablet {
+    padding-top: 41px;
+    padding-bottom: 14px;
+  }
+
+  @include desktop {
+    padding-top: 71px;
+    padding-bottom: 47px;
+  }
+
+  .testimonials-sec__title {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    color: $text-color;
+    text-align: center;
+    letter-spacing: -0.025em;
+
+    @include tablet {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    @include desktop {
+      font-size: 44px;
+      line-height: 48px;
+    }
+  }
+
+  .testimonials-sec__list-card {
+    @include tablet {
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 31px;
+    }
+
+    @include desktop {
+      margin-top: 29px;
+    }
+  }
+}

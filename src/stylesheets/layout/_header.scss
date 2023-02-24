@@ -1,0 +1,86 @@
+@use "../abstracts/" as *;
+
+header {
+  @include bg-img("../assets/images/Banner/Banner1.jpg");
+  height: 540px;
+
+  @include tablet {
+    height: 564px;
+  }
+
+  @include desktop {
+    height: 768px;
+  }
+
+  .introduce-sec {
+    width: 240px;
+    margin: 100px auto 0;
+    text-align: center;
+
+    @include tablet {
+      width: 524px;
+      margin-top: 72px;
+    }
+
+    @include desktop {
+      width: 555px;
+    }
+
+    .introduce-sec__message {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.04em;
+      color: $white;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 35px;
+
+      @include tablet {
+        letter-spacing: -0.025em;
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      @include desktop {
+        font-size: 44px;
+        line-height: 48px;
+        letter-spacing: -0.0363636em;
+        margin-bottom: 53px;
+      }
+    }
+
+    .introduce-sec__video {
+      & > iframe {
+        width: 100%;
+        height: 140px;
+
+        @include tablet {
+          width: 346px;
+          height: 202px;
+        }
+
+        @include desktop {
+          width: 555px;
+          height: 324px;
+        }
+      }
+    }
+  }
+
+  .down-arrow {
+    margin-top: 115px;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      margin-top: 87px;
+      display: block;
+    }
+
+    .down-arrow__icon {
+      width: 16px;
+    }
+  }
+}

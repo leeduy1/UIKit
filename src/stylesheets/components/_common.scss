@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+.container {
+  padding: 0 15px;
+  max-width: inherit;
+
+  @include tablet {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @include desktop {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

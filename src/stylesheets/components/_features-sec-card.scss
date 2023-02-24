@@ -1,0 +1,65 @@
+@use "../abstracts/" as *;
+
+.features-sec-card {
+  display: flex;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 70px;
+  }
+
+  @include desktop {
+    margin-bottom: 35px;
+  }
+
+  .card__img {
+    width: 32px;
+
+    @include desktop {
+      width: 45px;
+    }
+  }
+
+  .card-text {
+    flex: 1;
+    margin-left: 14px;
+
+    @include desktop {
+      margin-left: 20px;
+    }
+
+    .card-text__title {
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+      color: $text-color;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      letter-spacing: 0.0666667em;
+
+      @include desktop {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.0555556em;
+        margin-bottom: 0;
+      }
+    }
+
+    .card-text__paragraph {
+      color: $text-color;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 16px;
+
+      @include tablet {
+        width: 212px;
+      }
+
+      @include desktop {
+        font-size: 16px;
+        line-height: 24px;
+        width: 262px;
+      }
+    }
+  }
+}
