@@ -130,8 +130,12 @@
         line-height: 14px;
         padding-left: 8px;
         padding-right: 40px;
+        color: $white;
+        outline: none;
 
         @include desktop {
+          font-size: 16px;
+          line-height: 27px;
           height: 100%;
         }
       }

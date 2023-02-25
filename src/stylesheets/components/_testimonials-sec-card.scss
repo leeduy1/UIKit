@@ -44,6 +44,11 @@
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 0.0666667em;
+
+      @include desktop {
+        font-size: 15.9712px;
+        line-height: 18px;
+      }
     }
 
     .card-main__sub-title {
